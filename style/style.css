@@ -1,7 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto";
+  font-weight: 500;
+  background-color: rgb(238, 238, 238);
 }
 
 header {
@@ -43,7 +49,7 @@ nav li {
 }
 
 .galaxy-section {
-  height: 300px;
+  height: 400px;
   background-image: url("../images/galaxy4.png");
   background-attachment: fixed;
   background-position: center top;
@@ -53,7 +59,7 @@ nav li {
 }
 
 .galaxy-heading {
-  height: 300px;
+  height: 400px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -153,9 +159,63 @@ nav li {
   padding-bottom: 16.29%;
 }
 
+.stock-section {
+  padding-top: 5%;
+}
+
+.stock-section .text-container {
+  text-align: center;
+  padding: 15px;
+  background-color: white;
+  margin: 0% 5%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
 .location-section img {
   width: 100%;
   display: block;
+  margin-top: 5%;
+}
+
+.contact-section .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.section-info {
+  text-align: center;
+}
+
+.contact-section a {
+  color: black;
+  font-weight: 700;
+}
+
+.contact-section img {
+  display: block;
+  width: 100%;
+}
+
+input[type="text"] {
+  border: 2px solid black;
+}
+textarea {
+  border: 2px solid black;
+}
+input[type="submit"] {
+  border: 2px solid black;
+  background-color: white;
+  padding: 15px;
+  font-size: large;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+input[type="submit"]:hover {
+  background-color: black;
+  color: white;
 }
 
 footer {
@@ -164,6 +224,10 @@ footer {
   justify-content: center;
   padding: 15px;
   background-color: black;
+  color: white;
+}
+
+footer a {
   color: white;
 }
 
@@ -204,7 +268,7 @@ footer {
   .studio-section {
     margin-top: 22%;
   }
-  .location-section {
+  .contact-section {
     margin-top: 20%;
   }
 }
@@ -212,7 +276,7 @@ footer {
   .studio-section {
     margin-top: 5%;
   }
-  .location-section {
+  .contact-section {
     margin-top: 10%;
   }
 }
@@ -281,8 +345,17 @@ footer {
     z-index: 100;
     width: 50%;
   }
+  .contact-section .text-container {
+    position: absolute;
+    width: 40%;
+    margin-left: 30%;
+    padding: 15px;
+    margin-top: 20%;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.7);
+  }
 
-  footer {
-    margin-top: 22%;
+  .pre-footer-black {
+    height: 100px;
+    background-color: black;
   }
 }

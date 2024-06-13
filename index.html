@@ -10,6 +10,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css" />
     <title>STAR2 STUDIO</title>
   </head>
@@ -33,16 +36,19 @@
           <a href="">
             <li>POČETNA</li>
           </a>
-          <a href="">
+          <a href="#studio">
+            <li>STUDIO</li>
+          </a>
+          <a href="#stock">
             <li>STOCK</li>
           </a>
-          <a href="">
+          <a href="#contact">
             <li>KONTAKT</li>
           </a>
         </ul>
       </nav>
     </header>
-    <img src="./images/naslovna.jpg" id="heading-img" alt="" />
+    <img src="./images/naslovna.jpg" id="heading-img" alt=""/>
 
     <section class="galaxy-section">
       <div class="galaxy-heading">
@@ -81,10 +87,10 @@
       <img src="./images/parallax2.jpg" alt="" />
     </section>
 
-    <section class="studio-section">
+    <section class="studio-section" id="studio">
       <div class="text-container">
         <h2>STUDIO</h2>
-        <p>STAR2 STUDIO ima 2 kontrolne sobe(režije) i 2 sobe za snimanje</p>
+        <p>STAR2 STUDIO ima 2 kontrolne sobe (režije) i 2 sobe za snimanje</p>
         <p>
           Obje režije su akustički "izmjerene" kako bi producet imao
           najlinearniju moguću audio "sliku", a sobe za snimanje "odmjereno"
@@ -112,6 +118,19 @@
     </div>
     </section>
 
+    <section class="stock-section" id="stock">
+      <div class="text-container">
+        <h2>NAŠ LAGER GLAZBE</h2>
+        <p>
+          Ponekad glazba treba biti dostupna odmah, zato je mi uvijek imamo na stanju.
+        </p>
+      </div>
+      <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" 
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/408167948&color=%230a0e0f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+      </iframe>
+      <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-443696504" title="Star2Studio" target="_blank" style="color: #cccccc; text-decoration: none;">Star2Studio</a> · <a href="https://soundcloud.com/user-443696504/sets/star2studio-volume-i" title="STAR2STUDIO - Volume I" target="_blank" style="color: #cccccc; text-decoration: none;">STAR2STUDIO - Volume I</a></div>
+    </section>
+
     <section class="location-section">
       <div class="text-container">
         <h2>GDJE SMO?</h2>
@@ -127,6 +146,58 @@
       <img src="./images/parallax5.jpg" alt="" />
     </section>
 
+    <section class="contact-section" id="contact">
+      <div class="text-container">
+        <div class="section-info">
+          <h2>KONTAKT</h2>
+          <p>Upit nam pošaljite kroz formu, direktno na mail preko društvenih mreža ili pozivom</p>
+          <p>  
+            Naš e-mail: <a href="mailto:stariistudio@gmail.com">stariistudio@gmail.com</a>
+            <br>
+            Kontakt mobitel: <a href="tel:38598233736">38598/233-736</a> 
+          </p>
+        </div>
+        <div class="form-container">
+          <form name="contactform" method="post" action="send_form_email.php">
+						<table id="contact-table">
+							<tr>
+ 								<td valign="center">
+									Ime <font color="red">*</font><br>
+									<input  type="text" name="first_name" maxlength="50" size="39"><br>
+ 								</td>
+							</tr>
+							<tr>
+ 								<td valign="center">
+									Prezime <font color="red">*</font><br>
+									<input  type="text" name="last_name" maxlength="50" size="39"><br>
+ 								</td>
+							</tr>
+							<tr>
+ 								<td valign="center">
+									Vaš e-mail <font color="red">*</font><br>
+									<input  type="text" name="email" maxlength="80" size="39"><br>
+ 								</td>
+							</tr>
+							<tr>
+ 								<td valign="top">
+									Poruka <font color="red">*</font><br>
+									<textarea  name="comments" maxlength="1000" cols="41" rows="6"></textarea><br>
+ 								</td>
+							</tr>
+							<tr>
+ 								<td style="text-align:left">
+  									<input type="submit" value="Pošalji upit" id="button">
+ 								</td>
+							</tr>
+						</table>
+					</form>
+        </div>
+      </div>
+      <img src="./images/parallax6.jpg" alt="">
+    </section>
+
+    <div class="pre-footer-black"></div>
+
     <footer>
       <div class="footer-col">
         <h4>Kontakt</h4>
@@ -135,8 +206,20 @@
           mail: stariistudio@gmail.com
         </p>
       </div>
-      <div class="footer-col"></div>
-      <div class="footer-col"></div>
+      <div class="footer-col">
+        <h4>Društvene mreže</h4>
+        <p>
+          <a href="https://www.facebook.com/starIIstudio/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://soundcloud.com/user-443696504/sets/star2studio-volume-i?fbclid=IwZXh0bgNhZW0CMTAAAR1S5zOEPj5r1_6DGFDJMDqkXC4pvL7v1u2wZdtiR_oKRVEfqm5hy4IHUP0_aem_AUbI1gxEDsrvWNHh-Rgw2f8efAc1mVRiAdH38Rs1WVxcyLqY_7yUmeaZJNV0t0nqmojwuXrnsk5xjcY_HfcpU9kO" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Linkovi</h4>
+        <a href="">Početna</a><br>
+        <a href="#studio">Studio</a><br>
+        <a href="#stock">Stock</a><br>
+        <a href="#contact">Kontakt</a>
+      </div>
       <div class="footer-col">
         <h6>©2024. STAR2STUDIO - sva prava pridržana</h6>
         <h6>web stranica - i-dizajn</h6>
